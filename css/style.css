@@ -46,6 +46,7 @@ a {
 /* END LOGO*/
 
 /* NAVIGATION BAR */
+
 .top-background {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
@@ -68,6 +69,7 @@ a {
 .site-nav {
   display: flex;
   align-items: center;
+  justify-items: center;
 }
 
 .nav-main {
@@ -77,7 +79,11 @@ a {
 }
 
 .gap-between {
-  margin-left: 50px;
+  margin-left: 30px;
+}
+
+.brand-grey {
+  color: var(--brand-grey);
 }
 
 /* SEMI CLASSES-> ACTION*/
@@ -180,6 +186,15 @@ a {
 
 /* END BUTTON "Zamów usługe" */
 
+.background-img {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("/images/backgroundTeam.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .billboard {
   background-color: #2f303a;
   font-family: Roboto;
@@ -222,6 +237,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  color: var(--brand-grey);
 }
 
 .article-title {
@@ -319,3 +335,51 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 /* END FOOTER DESCRIPTION */
+
+/* SVG */
+
+.svg-color {
+  fill: var(--brand-grey);
+  /* vertical-align: middle; */
+}
+
+.svg-color:hover {
+  fill: var(--brand-blue);
+  stroke: var(--brand-blue);
+}
+
+.svg-color:focus {
+  fill: var(--brand-blue);
+}
+
+.svg-box {
+  background-color: rgb(245, 244, 250);
+  border-radius: 4px;
+}
+
+.antena {
+}
+
+/* SPRAWDZENIE NA MARGINESIE */
+
+.svg-try {
+  background-color: aquamarine;
+  vertical-align: middle;
+}
+
+.bc {
+  background-color: chocolate;
+  width: 2000px;
+  height: 2000px;
+}
+
+.astronaut {
+  width: 400px;
+  height: 400px;
+}
+
+.txt {
+  width: 300px;
+  height: 150px;
+  background-color: chartreuse;
+}
