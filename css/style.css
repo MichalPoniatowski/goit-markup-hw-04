@@ -278,6 +278,7 @@ a {
   display: block;
   color: var(--brand-black);
   margin: 30px 0 10px 0;
+  padding: 0;
 }
 
 .team-position {
@@ -287,7 +288,8 @@ a {
   letter-spacing: 0.03em;
   color: var(--brand-grey);
   text-align: center;
-  margin: 10px 0 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 .team-background {
@@ -300,7 +302,13 @@ a {
   margin-bottom: 94px;
 }
 
+.margin-94 {
+  margin: 94px 0;
+}
+
 /*END INDEX HTML - WEB STUDIO*/
+
+/* NASI KLIENCI */
 
 /* FOOTER DESCRIPTION */
 
@@ -310,6 +318,16 @@ a {
 
 .margin20 {
   margin-bottom: 20px;
+}
+
+.wrapper-footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 60px 215px;
+}
+
+.margin60 {
+  margin: 60px 0;
 }
 
 .footer-background {
@@ -335,13 +353,40 @@ a {
 .color-gradient {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-flex {
+  display: flex;
+  gap: 70px;
+  margin: 0;
+}
+
+.box-1 {
+  width: 246px;
+  margin: 0;
+  padding: 0;
+}
+
+.box-2 {
+  width: 300px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.join-us {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
 /* END FOOTER DESCRIPTION */
 
 /* SVG */
 
 .svg-color {
   fill: var(--brand-grey);
-  /* vertical-align: middle; */
 }
 
 .svg-color:hover {
@@ -364,34 +409,51 @@ a {
 }
 
 .social-icons:hover,
-.social-icons:focus,
-.social-icons:active {
+.social-icons:focus {
   cursor: pointer;
-  fill: chartreuse;
+  fill: rgb(255, 255, 255);
   background-color: var(--brand-blue);
   border-radius: 50%;
 }
 
-/* SPRAWDZENIE NA MARGINESIE */
+.social-icons-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
 
-.svg-try {
-  background-color: aquamarine;
+.justify-left {
+  justify-content: left;
+}
+
+.circle-background {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.company-icons {
+  fill: var(--brand-lightgrey);
+  margin: 0;
+  padding: 0;
   vertical-align: middle;
 }
 
-.bc {
-  background-color: chocolate;
-  width: 2000px;
-  height: 2000px;
+.company-icons:hover,
+.company-icons:focus {
+  cursor: pointer;
+  fill: var(--brand-blue);
 }
 
-.astronaut {
-  width: 400px;
-  height: 400px;
+.border:hover,
+.border:focus {
+  border-color: var(--brand-blue);
 }
 
-.txt {
-  width: 300px;
-  height: 150px;
-  background-color: chartreuse;
+.border {
+  width: 170px;
+  height: 92px;
+  border-color: var(--brand-lightgrey);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
 }
